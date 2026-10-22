@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8f3">
+  <meta name="description" content="Photograph a maize, potato, rice or wheat leaf to check for disease.">
+  <title>फसल डॉक्टर | KisanSaathi</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232b6844'/%3E%3Cpath d='M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5' fill='none' stroke='%23f2cb69' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Mukta-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/TiroDevanagariHindi-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <script src="js/names.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/disease.js" defer></script>
+</head>
+<body data-title-key="nav_doctor">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="wordmark" href="index.html" aria-label="KisanSaathi home">
+        <svg class="wordmark-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2b6844"/><path d="M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5" fill="none" stroke="#f2cb69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="wordmark-text"><span class="wordmark-en" lang="en">KisanSaathi</span><span class="wordmark-hi" lang="hi">किसान साथी</span></span>
+      </a>
+      <nav class="top-nav" data-i18n-aria="nav_label">
+        <a href="disease.html" aria-current="page"><span data-i18n="nav_doctor">Crop Doctor</span></a>
+        <a href="prices.html"><span data-i18n="nav_prices">Mandi prices</span></a>
+        <a href="crops.html"><span data-i18n="nav_insights">Crop insights</span></a>
+        <a href="planning.html"><span data-i18n="nav_planner">Next season</span></a>
+        <a href="irrigation.html"><span data-i18n="nav_irrigation">Irrigation</span></a>
+        <a href="market.html"><span data-i18n="nav_market">Sell &amp; buy</span></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / भाषा">
+        <button type="button" data-lang="hi" aria-pressed="true" lang="hi">हिं</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <header class="page-head">
+      <h1 data-i18n="doc_title">Crop Doctor</h1>
+      <p data-i18n="doc_lead">Works for maize, potato, rice and wheat leaves.</p>
+    </header>
+
+    <div class="split">
+      <section class="capture sticky">
+        <input class="photo-input" type="file" id="photo" accept="image/*">
+        <label for="photo" class="dropzone" id="dropzone">
+          <span class="dropzone-art"><span data-icon="camera" class="lg"></span></span>
+          <span>
+            <span class="dropzone-title" data-i18n="doc_drop">Take a clear photo of one leaf</span><br>
+            <span class="dropzone-sub" data-i18n="doc_drop_sub">Tap to open the camera, or drop a photo here</span>
+          </span>
+          <span class="shot" id="shot" hidden>
+            <img id="preview" alt="">
+            <span class="scan" aria-hidden="true"></span>
+            <span class="scan-label" id="scanLabel" hidden><span class="spinner"></span><span data-i18n="doc_checking">Checking the leaf…</span></span>
+          </span>
+        </label>
+        <label for="photo" class="btn btn-primary btn-lg btn-block" id="photoButton"><span data-icon="camera"></span><span data-i18n="doc_button">Take or choose a photo</span></label>
+        <ul class="tips">
+          <li><span data-icon="check" class="sm"></span><span data-i18n="doc_tip_1">Fill the photo with one leaf</span></li>
+          <li><span data-icon="check" class="sm"></span><span data-i18n="doc_tip_2">Use daylight, not flash</span></li>
+          <li><span data-icon="check" class="sm"></span><span data-i18n="doc_tip_3">Keep the spots in focus</span></li>
+        </ul>
+        <div id="status" aria-live="polite"></div>
+      </section>
+
+      <section id="result" aria-live="polite" aria-busy="false"></section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p><span data-i18n="footer_note">Mandi prices come from the community Mandi Price API, based on India’s open mandi data; check each report date. Advice is general; ask your Krishi Vigyan Kendra before using any chemical.</span> <a href="tel:18001801551" data-i18n="helpline">Kisan Call Centre: 1800-180-1551 (toll-free)</a></p>
+  </footer>
+  <nav class="bottom-nav" data-i18n-aria="nav_label">
+    <a href="disease.html" aria-current="page"><span data-icon="leaf"></span><span data-i18n="nav_doctor">Crop Doctor</span></a>
+    <a href="prices.html"><span data-icon="rupee"></span><span data-i18n="nav_prices">Mandi prices</span></a>
+    <a href="crops.html"><span data-icon="chart"></span><span data-i18n="nav_insights">Crop insights</span></a>
+    <a href="planning.html"><span data-icon="sprout"></span><span data-i18n="nav_planner">Next season</span></a>
+    <a href="irrigation.html"><span data-icon="drop"></span><span data-i18n="nav_irrigation">Irrigation</span></a>
+    <a href="market.html"><span data-icon="market"></span><span data-i18n="nav_market">Sell &amp; buy</span></a>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,36 @@
+KisanSaathi automated verification results
+Date: 2026-10-18 (master update)
+
+Backend pytest suite: 115 tests collected; 115 passed.
+Python compilation: passed (python -m compileall -q app scripts tests).
+Frontend JavaScript syntax: passed (node --check for every frontend/js/*.js file).
+English/Hindi text parity: passed (566 keys each, identical sets; all used keys defined).
+Hindi place names: 672 of 672 crop-dataset state/district pairs have a Hindi name.
+
+Test groups (file: tests):
+- test_community_mandi_api: 5
+- test_crop_catalog (crop aliases, units, plausibility): 3
+- test_crops (crop insights/data import): 7
+- test_disease (incl. not-a-leaf, Invalid, close call): 10
+- test_frontend_text (English/Hindi texts): 3
+- test_health (health and website serving): 2
+- test_irrigation (root-zone balance, hand-computed values): 5
+- test_listings: 8
+- test_mandi_history: 6
+- test_mandi_sync: 4
+- test_model_artifacts: 6
+- test_names (Hindi place/crop names): 3
+- test_operations (health 503 on database failure, scheduler lease, price retention, farm key hashing, record checks, model evaluation script): 6
+- test_planning (planner evidence rules, missing data, harvest records): 5
+- test_prices: 7
+- test_real_data (685 real dataset rows): 4
+- test_remedies (bilingual): 19
+- test_security (weak PIN, lockout, OTP, rate limit, expiry, withdraw, wildcards): 8
+- test_weather (IMD thresholds, mocked provider): 4
+
+Browser check (Playwright/Chromium, Hindi and English, 390 px and 1366 px, all seven pages):
+no horizontal overflow; no English left on screen in Hindi except proper names and units;
+trader-offer totals, OTP flow, withdraw, Hindi search, planner and irrigation checked. See VERIFICATION_REPORT.md.
+
+External network limitations: fresh model downloads/inference, live Open-Meteo calls, live Mandi Price API
+requests and real SMS were not run during packaging.

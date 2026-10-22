@@ -1,0 +1,42 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets - never commit
+.env
+backend/.env
+
+# The downloaded AI model (about 25 MB) - each laptop downloads its own copy
+ml/model/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test database
+*.db
+
+# Downloaded historical crop dataset (~12 MB; fetched on each developer machine)
+data/crop_production.csv
+
+# Runtime mandi-price CSV snapshot/cache
+data/mandi_snapshot.csv
+
+# Additional secrets and generated files
+.env.*
+!.env.example
+
+# Additional database files
+*.sqlite
+*.sqlite3
+
+# ML model weights
+*.safetensors
+*.pt
+*.pth
+*.bin

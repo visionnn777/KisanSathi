@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8f3">
+  <meta name="description" content="Seven-day crop water estimate and current conditions from the live weather forecast.">
+  <title>सिंचाई योजना | KisanSaathi</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232b6844'/%3E%3Cpath d='M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5' fill='none' stroke='%23f2cb69' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Mukta-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/TiroDevanagariHindi-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <script src="js/names.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/irrigation.js" defer></script>
+</head>
+<body data-title-key="nav_irrigation">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="wordmark" href="index.html" aria-label="KisanSaathi home">
+        <svg class="wordmark-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2b6844"/><path d="M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5" fill="none" stroke="#f2cb69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="wordmark-text"><span class="wordmark-en" lang="en">KisanSaathi</span><span class="wordmark-hi" lang="hi">किसान साथी</span></span>
+      </a>
+      <nav class="top-nav" data-i18n-aria="nav_label">
+        <a href="disease.html"><span data-i18n="nav_doctor">Crop Doctor</span></a>
+        <a href="prices.html"><span data-i18n="nav_prices">Mandi prices</span></a>
+        <a href="crops.html"><span data-i18n="nav_insights">Crop insights</span></a>
+        <a href="planning.html"><span data-i18n="nav_planner">Next season</span></a>
+        <a href="irrigation.html" aria-current="page"><span data-i18n="nav_irrigation">Irrigation</span></a>
+        <a href="market.html"><span data-i18n="nav_market">Sell &amp; buy</span></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / भाषा">
+        <button type="button" data-lang="hi" aria-pressed="true" lang="hi">हिं</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <header class="page-head">
+      <h1 data-i18n="irr_title">Irrigation Planner</h1>
+      <p data-i18n="irr_intro">Use live current conditions and a seven-day forecast to estimate crop water use and irrigation deficit.</p>
+    </header>
+
+    <div class="work-layout">
+      <form id="irrigationForm" class="panel filters form">
+        <h2 class="panel-title" data-i18n="irr_where">Where is the field?</h2>
+        <div class="row two">
+          <div class="field">
+            <label class="label" for="location" data-i18n="irr_location">Town / city / nearest place</label>
+            <input class="input" id="location" name="location" minlength="2" maxlength="100" required data-i18n-placeholder="irr_location_ph" placeholder="e.g. Ludhiana" autocomplete="address-level2">
+          </div>
+          <div class="field">
+            <label class="label" for="state" data-i18n="f_state">State</label>
+            <select class="select" id="state" name="state" required><option value="" data-i18n="crop_choose_state">Choose a state…</option></select>
+          </div>
+        </div>
+
+        <h2 class="panel-title" style="margin-top:26px" data-i18n="irr_field">Crop and field</h2>
+        <fieldset class="field chips-field">
+          <legend class="label" data-i18n="irr_crop">Crop</legend>
+          <div class="chips" id="cropChips">
+              <label class="chip"><input type="radio" name="crop" value="maize" checked><span data-crop="Maize">Maize</span></label>
+              <label class="chip"><input type="radio" name="crop" value="wheat"><span data-crop="Wheat">Wheat</span></label>
+              <label class="chip"><input type="radio" name="crop" value="rice"><span data-crop="Rice">Rice</span></label>
+              <label class="chip"><input type="radio" name="crop" value="tomato"><span data-crop="Tomato">Tomato</span></label>
+              <label class="chip"><input type="radio" name="crop" value="potato"><span data-crop="Potato">Potato</span></label>
+              <label class="chip"><input type="radio" name="crop" value="soybean"><span data-crop="Soybean">Soybean</span></label>
+              <label class="chip"><input type="radio" name="crop" value="onion"><span data-crop="Onion">Onion</span></label>
+              <label class="chip"><input type="radio" name="crop" value="mustard"><span data-crop="Mustard">Mustard</span></label>
+              <label class="chip"><input type="radio" name="crop" value="chickpea"><span data-crop="Chickpea">Chickpea</span></label>
+              <label class="chip"><input type="radio" name="crop" value="groundnut"><span data-crop="Groundnut">Groundnut</span></label>
+              <label class="chip"><input type="radio" name="crop" value="cotton"><span data-crop="Cotton">Cotton</span></label>
+              <label class="chip"><input type="radio" name="crop" value="sugarcane"><span data-crop="Sugarcane">Sugarcane</span></label>
+              <label class="chip"><input type="radio" name="crop" value="pearl millet"><span data-crop="Pearl millet">Pearl millet</span></label>
+              <label class="chip"><input type="radio" name="crop" value="sorghum"><span data-crop="Sorghum">Sorghum</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label class="label" for="stage" data-i18n="irr_stage">Growth stage</label>
+          <select class="select" id="stage" name="stage" required>
+            <option value="initial" data-i18n="irr_initial">Initial / establishment</option>
+            <option value="development" data-i18n="irr_development">Vegetative development</option>
+            <option value="mid_season" data-i18n="irr_mid">Mid-season / flowering or peak growth</option>
+            <option value="late_season" data-i18n="irr_late">Late season / ripening</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="label" for="area" data-i18n="irr_area">Field area (hectares)</label>
+          <div class="input-unit"><input class="input num" id="area" name="area_ha" type="number" inputmode="decimal" min="0.0001" max="10000" step="any" required value="1"><span class="unit" data-i18n="unit_ha">ha</span></div>
+          <p class="hint" data-i18n="irr_acre_hint">1 acre is about 0.405 hectare; 1 bigha is different in each state.</p>
+        </div>
+        <fieldset class="field chips-field">
+          <legend class="label" data-i18n="irr_efficiency">Irrigation system efficiency</legend>
+          <div class="options">
+              <label class="option"><input type="radio" name="efficiency" value="0.9"><span class="option-body"><span class="option-title" data-i18n="irr_eff_drip">Drip</span><span class="option-desc" data-i18n="irr_eff_drip_d">Well-managed, efficient system</span></span><span class="option-tag num">90%</span></label>
+              <label class="option"><input type="radio" name="efficiency" value="0.75"><span class="option-body"><span class="option-title" data-i18n="irr_eff_sprinkler">Sprinkler</span><span class="option-desc" data-i18n="irr_eff_sprinkler_d">Reasonably efficient system</span></span><span class="option-tag num">75%</span></label>
+              <label class="option"><input type="radio" name="efficiency" value="0.6" checked><span class="option-body"><span class="option-title" data-i18n="irr_eff_surface">Surface or flood</span><span class="option-desc" data-i18n="irr_eff_surface_d">Rough estimate</span></span><span class="option-tag num">60%</span></label>
+          </div>
+        </fieldset>
+        <div class="row two field">
+          <div class="field">
+            <label class="label" for="soilTexture" data-i18n="irr_soil">Soil texture</label>
+            <select class="select" id="soilTexture" name="soil_texture">
+              <option value="unknown" data-i18n="irr_soil_unknown">Unknown</option>
+              <option value="sandy" data-i18n="irr_soil_sandy">Sandy</option>
+              <option value="loamy" data-i18n="irr_soil_loamy">Loamy</option>
+              <option value="alluvial" data-i18n="planner_soil_alluvial">Alluvial</option>
+              <option value="clayey" data-i18n="irr_soil_clayey">Clayey</option>
+              <option value="black" data-i18n="irr_soil_black">Black soil</option>
+              <option value="red" data-i18n="irr_soil_red">Red soil</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="label" for="fieldMoisture" data-i18n="irr_moisture">Current field moisture</label>
+            <select class="select" id="fieldMoisture" name="field_moisture">
+              <option value="unknown" data-i18n="irr_moisture_unknown">Unknown</option>
+              <option value="dry" data-i18n="irr_moisture_dry">Dry</option>
+              <option value="normal" data-i18n="irr_moisture_normal">Normal</option>
+              <option value="wet" data-i18n="irr_moisture_wet">Wet</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top:22px"><span data-icon="drop"></span><span data-i18n="irr_calculate">Estimate next 7 days</span></button>
+      </form>
+
+      <div class="results-col">
+        <div id="status" aria-live="polite"></div>
+        <div id="results" class="stack" aria-live="polite"></div>
+      </div>
+
+      <section class="panel extra" aria-labelledby="irrSourcesTitle">
+        <p class="notice warn" style="margin-top:0"><span data-icon="info" class="sm"></span><span data-i18n="irr_caveat">Planning estimate only. It is not a guaranteed irrigation schedule. The soil-water figures are typical values for the soil type, not a measurement of your field. It does not model percolation, runoff or paddy flooding. Check soil moisture by hand and ask your Krishi Vigyan Kendra (KVK) before changing water practice.</span></p>
+        <h2 class="panel-title" id="irrSourcesTitle" style="margin-top:16px" data-i18n="irr_sources">Sources and attribution</h2>
+        <ul class="link-list">
+          <li><a class="ext-link" href="https://open-meteo.com/en/docs" target="_blank" rel="noopener noreferrer">Open-Meteo Forecast API (CC BY 4.0)<span data-icon="external" class="sm"></span></a></li>
+          <li><a class="ext-link" href="https://www.fao.org/4/S2022E/s2022e07.htm" target="_blank" rel="noopener noreferrer"><span data-i18n="src_fao_kc">FAO-56 crop coefficients and root-zone tables</span><span data-icon="external" class="sm"></span></a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p><span data-i18n="footer_note">Mandi prices come from the community Mandi Price API, based on India’s open mandi data; check each report date. Advice is general; ask your Krishi Vigyan Kendra before using any chemical.</span> <a href="tel:18001801551" data-i18n="helpline">Kisan Call Centre: 1800-180-1551 (toll-free)</a></p>
+  </footer>
+  <nav class="bottom-nav" data-i18n-aria="nav_label">
+    <a href="disease.html"><span data-icon="leaf"></span><span data-i18n="nav_doctor">Crop Doctor</span></a>
+    <a href="prices.html"><span data-icon="rupee"></span><span data-i18n="nav_prices">Mandi prices</span></a>
+    <a href="crops.html"><span data-icon="chart"></span><span data-i18n="nav_insights">Crop insights</span></a>
+    <a href="planning.html"><span data-icon="sprout"></span><span data-i18n="nav_planner">Next season</span></a>
+    <a href="irrigation.html" aria-current="page"><span data-icon="drop"></span><span data-i18n="nav_irrigation">Irrigation</span></a>
+    <a href="market.html"><span data-icon="market"></span><span data-i18n="nav_market">Sell &amp; buy</span></a>
+  </nav>
+</body>
+</html>

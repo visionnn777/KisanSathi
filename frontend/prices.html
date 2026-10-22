@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8f3">
+  <meta name="description" content="Dated mandi prices for your crop, with a short trend and a trader-offer check.">
+  <title>मंडी भाव | KisanSaathi</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232b6844'/%3E%3Cpath d='M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5' fill='none' stroke='%23f2cb69' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Mukta-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/TiroDevanagariHindi-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <script src="js/names.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/prices.js" defer></script>
+</head>
+<body data-title-key="nav_prices">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="wordmark" href="index.html" aria-label="KisanSaathi home">
+        <svg class="wordmark-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2b6844"/><path d="M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5" fill="none" stroke="#f2cb69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="wordmark-text"><span class="wordmark-en" lang="en">KisanSaathi</span><span class="wordmark-hi" lang="hi">किसान साथी</span></span>
+      </a>
+      <nav class="top-nav" data-i18n-aria="nav_label">
+        <a href="disease.html"><span data-i18n="nav_doctor">Crop Doctor</span></a>
+        <a href="prices.html" aria-current="page"><span data-i18n="nav_prices">Mandi prices</span></a>
+        <a href="crops.html"><span data-i18n="nav_insights">Crop insights</span></a>
+        <a href="planning.html"><span data-i18n="nav_planner">Next season</span></a>
+        <a href="irrigation.html"><span data-i18n="nav_irrigation">Irrigation</span></a>
+        <a href="market.html"><span data-i18n="nav_market">Sell &amp; buy</span></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / भाषा">
+        <button type="button" data-lang="hi" aria-pressed="true" lang="hi">हिं</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <header class="page-head">
+      <h1 data-i18n="pr_title">Mandi prices</h1>
+      <p data-i18n="pr_intro">Find the mandi that pays the most for your crop.</p>
+    </header>
+    <div id="dataNotice" aria-live="polite"></div>
+
+    <div class="work-layout">
+      <section class="panel filters">
+        <div class="form">
+          <div class="row two">
+            <div class="field">
+              <label class="label" for="state" data-i18n="pr_state">State</label>
+              <select class="select" id="state"></select>
+            </div>
+            <div class="field">
+              <label class="label" for="commodity" data-i18n="pr_crop">Crop</label>
+              <select class="select" id="commodity" disabled></select>
+            </div>
+          </div>
+        </div>
+        <p class="meta-line" data-i18n="pr_source">Source: Mandi Price API, a community service sourcing data from India’s open mandi data. Check each market date; reports may be delayed.</p>
+      </section>
+
+      <div class="results-col">
+        <div id="status" aria-live="polite"></div>
+        <div id="results" class="stack" aria-live="polite"></div>
+      </div>
+
+      <section class="panel extra" id="comparePanel" hidden aria-labelledby="compareTitle">
+        <h2 class="panel-title" id="compareTitle" data-i18n="pr_trader">What is the trader offering?</h2>
+        <p class="panel-sub" id="compareBasis" data-i18n="pr_trader_hint">Enter the trader's price per kg to compare.</p>
+        <div class="row two">
+          <div class="field">
+            <label class="label" for="traderPrice" data-i18n="f_price">Price per kg</label>
+            <div class="input-unit"><input class="input num" id="traderPrice" type="number" inputmode="decimal" min="0" step="0.01"><span class="unit" data-i18n="unit_rs_kg">₹/kg</span></div>
+          </div>
+          <div class="field">
+            <label class="label" for="traderQty" data-i18n="pr_qty">How much will you sell?</label>
+            <div class="input-unit"><input class="input num" id="traderQty" type="number" inputmode="decimal" min="0" step="any"><span class="unit" data-i18n="pr_units">kg</span></div>
+          </div>
+        </div>
+        <fieldset class="cost-fieldset">
+          <legend class="label" data-i18n="pr_costs_title">Costs of selling at the mandi (optional)</legend>
+          <div class="row three">
+            <div class="field">
+              <label class="label" for="costTransport" data-i18n="pr_cost_transport">Transport to mandi</label>
+              <div class="input-unit"><input class="input num" id="costTransport" type="number" inputmode="decimal" min="0" step="any"><span class="unit" data-i18n="pr_unit_total">₹ total</span></div>
+            </div>
+            <div class="field">
+              <label class="label" for="costCommission" data-i18n="pr_cost_commission">Commission and mandi fee</label>
+              <div class="input-unit"><input class="input num" id="costCommission" type="number" inputmode="decimal" min="0" max="20" step="0.1"><span class="unit">%</span></div>
+            </div>
+            <div class="field">
+              <label class="label" for="costOther" data-i18n="pr_cost_other">Loading, labour and other</label>
+              <div class="input-unit"><input class="input num" id="costOther" type="number" inputmode="decimal" min="0" step="any"><span class="unit" data-i18n="pr_unit_total">₹ total</span></div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="compare-out" id="compareOut" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p><span data-i18n="footer_note">Mandi prices come from the community Mandi Price API, based on India’s open mandi data; check each report date. Advice is general; ask your Krishi Vigyan Kendra before using any chemical.</span> <a href="tel:18001801551" data-i18n="helpline">Kisan Call Centre: 1800-180-1551 (toll-free)</a></p>
+  </footer>
+  <nav class="bottom-nav" data-i18n-aria="nav_label">
+    <a href="disease.html"><span data-icon="leaf"></span><span data-i18n="nav_doctor">Crop Doctor</span></a>
+    <a href="prices.html" aria-current="page"><span data-icon="rupee"></span><span data-i18n="nav_prices">Mandi prices</span></a>
+    <a href="crops.html"><span data-icon="chart"></span><span data-i18n="nav_insights">Crop insights</span></a>
+    <a href="planning.html"><span data-icon="sprout"></span><span data-i18n="nav_planner">Next season</span></a>
+    <a href="irrigation.html"><span data-icon="drop"></span><span data-i18n="nav_irrigation">Irrigation</span></a>
+    <a href="market.html"><span data-icon="market"></span><span data-i18n="nav_market">Sell &amp; buy</span></a>
+  </nav>
+</body>
+</html>

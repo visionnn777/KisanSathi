@@ -1,0 +1,735 @@
+# KisanSaathi place names: English display name | Hindi | other spellings seen in data sources
+# Lines starting with "@" start a state: @ Display | Hindi | aliases
+# District lines follow: Display | Hindi | aliases (semicolon separated)
+# Keys are matched after removing spaces and punctuation, so "N.SHAHAR" and "N SHAHAR" are the same.
+@ Andaman and Nicobar Islands | अंडमान और निकोबार द्वीपसमूह | A & N ISLANDS; Andaman & Nicobar; Andaman and Nicobar
+Andaman and Nicobar Islands | अंडमान और निकोबार द्वीपसमूह | A & N ISLANDS
+Andaman | अंडमान |
+Nicobar | निकोबार | Nicobars
+North and Middle Andaman | उत्तर और मध्य अंडमान |
+South Andaman | दक्षिण अंडमान |
+@ Andhra Pradesh | आंध्र प्रदेश |
+Adilabad | आदिलाबाद |
+Anantapur | अनंतपुर | ANANTPUR; Ananthapur; Ananthapuramu
+Chittoor | चित्तूर |
+Kadapa | कडपा | CUDDAPAH; YSR Kadapa; Y.S.R.
+East Godavari | पूर्वी गोदावरी |
+Guntur | गुंटूर |
+Hyderabad | हैदराबाद |
+Karimnagar | करीमनगर |
+Khammam | खम्मम |
+Krishna | कृष्णा |
+Kurnool | कुरनूल |
+Mahabubnagar | महबूबनगर | MAHABOOBNAGAR
+Medak | मेदक |
+Nalgonda | नलगोंडा |
+Nellore | नेल्लोर | SPSR Nellore; Sri Potti Sriramulu Nellore
+Nizamabad | निज़ामाबाद |
+Prakasam | प्रकाशम |
+Ranga Reddy | रंगारेड्डी | RANGAREDDY; Rangareddi
+Srikakulam | श्रीकाकुलम |
+Visakhapatnam | विशाखापत्तनम | Vishakhapatnam
+Vizianagaram | विजयनगरम | VIZIANAGARM
+Warangal | वारंगल |
+West Godavari | पश्चिमी गोदावरी |
+@ Arunachal Pradesh | अरुणाचल प्रदेश |
+Anjaw | अंजॉ |
+Changlang | चांगलांग |
+Dibang Valley | दिबांग घाटी | D/VALLEY
+East Kameng | पूर्वी कामेंग | E/KAMENG
+East Siang | पूर्वी सियांग | E/SIANG
+Kurung Kumey | कुरुंग कुमे | KURUNG KAMEY
+Lower Subansiri | निचला सुबनसिरी | L/SUBABSIRI
+Lohit | लोहित |
+Lower Dibang Valley | निचली दिबांग घाटी |
+Papum Pare | पापुम पारे | PAPUMPARE
+Tawang | तवांग |
+Tirap | तिरप |
+Upper Siang | ऊपरी सियांग | U/SIANG
+Upper Subansiri | ऊपरी सुबनसिरी | U/SUBANSIRI
+West Kameng | पश्चिमी कामेंग | W/KAMENG
+West Siang | पश्चिमी सियांग | W/SIANG
+@ Assam | असम |
+Barpeta | बरपेटा |
+Baksa | बक्सा | BASKA
+Bongaigaon | बोंगाईगाँव |
+Cachar | कछार |
+Chirang | चिरांग |
+Darrang | दरंग |
+Dhemaji | धेमाजी |
+Dhubri | धुबरी |
+Dibrugarh | डिब्रूगढ़ |
+Goalpara | ग्वालपाड़ा |
+Golaghat | गोलाघाट |
+Hailakandi | हैलाकांडी |
+Jorhat | जोरहाट |
+Kamrup | कामरूप |
+Kamrup Metropolitan | कामरूप महानगर | KAMRUP (M); Kamrup Metro
+Karbi Anglong | कार्बी आंगलोंग | KARBI-ANGLONG
+Karimganj | करीमगंज | Sribhumi
+Kokrajhar | कोकराझार |
+Lakhimpur | लखीमपुर | North Lakhimpur
+New Lakhimpur | न्यू लखीमपुर | NEW LAKHIMPUR
+Morigaon | मोरीगाँव | MORIGON
+Dima Hasao | दिमा हसाओ | N C HILLS; North Cachar Hills
+Nagaon | नगाँव |
+Nalbari | नलबाड़ी |
+Sivasagar | शिवसागर | SIBSAGAR
+Sonitpur | शोणितपुर |
+Tinsukia | तिनसुकिया |
+Udalguri | उदालगुड़ी |
+@ Bihar | बिहार |
+Araria | अररिया |
+Arhasia | अरहसिया | ARHASIA
+Arwal | अरवल | ARVAL
+Aurangabad | औरंगाबाद | ORANGABAD
+Bhagalpur | भागलपुर | BAGHALPUR
+Banka | बांका | BHANKA
+Begusarai | बेगूसराय |
+Kaimur (Bhabua) | कैमूर (भभुआ) | BHABHA; Kaimur; Bhabua
+Bhojpur | भोजपुर |
+Bokaro | बोकारो |
+Buxar | बक्सर |
+East Champaran | पूर्वी चंपारण | CHAMPARAN(EAST); Purba Champaran; Purbi Champaran
+West Champaran | पश्चिमी चंपारण | CHAMPARAN(WEST); Pashchim Champaran
+Chatra | चतरा | CHUTRA
+Darbhanga | दरभंगा |
+Deoghar | देवघर | DEVGHAR
+Dhanbad | धनबाद |
+Dumka | दुमका |
+Garhwa | गढ़वा | GADHWA
+Gaya | गया |
+Giridih | गिरिडीह |
+Godda | गोड्डा |
+Gopalganj | गोपालगंज |
+Gumla | गुमला | GUMALA
+Hazaribagh | हज़ारीबाग |
+Jehanabad | जहानाबाद | JAHANABAD
+Jamui | जमुई | ZAMUI
+Katihar | कटिहार |
+Khagaria | खगड़िया |
+Kishanganj | किशनगंज |
+Koderma | कोडरमा | KODRAMA
+Lakhisarai | लखीसराय | LAKHISARIA
+Lohardaga | लोहरदगा | LOHARDANGA
+Madhubani | मधुबनी |
+Madhepura | मधेपुरा | MADHUPURA
+Munger | मुंगेर | MONGHYR
+Muzaffarpur | मुज़फ़्फ़रपुर |
+Nalanda | नालंदा |
+Nawada | नवादा | NAWADHA
+Pakur | पाकुड़ |
+Palamu | पलामू | PALAMAU
+Patna | पटना |
+Purnia | पूर्णिया | Purnea
+Ranchi | रांची |
+Rohtas | रोहतास |
+Saharsa | सहरसा |
+Sahibganj | साहिबगंज | SAHEBGANJ
+Samastipur | समस्तीपुर |
+Saran | सारण |
+Sheohar | शिवहर | SHIVHAR
+Sheikhpura | शेखपुरा | SHKHPURA
+Singhbhum | सिंहभूम | SINGHBHUM
+West Singhbhum | पश्चिमी सिंहभूम | SINGHBHUR(WEST)
+Sitamarhi | सीतामढ़ी |
+Siwan | सीवान |
+Sumal | सुमल | SUMAL
+Supaul | सुपौल |
+Vaishali | वैशाली |
+@ Chandigarh | चंडीगढ़ |
+Chandigarh | चंडीगढ़ |
+@ Chhattisgarh | छत्तीसगढ़ |
+Bastar | बस्तर |
+Bilaspur | बिलासपुर |
+Dantewada | दंतेवाड़ा | DANTEWARA; Dakshin Bastar Dantewada
+Dhamtari | धमतरी |
+Durg | दुर्ग |
+Janjgir-Champa | जांजगीर-चांपा | JANJGIR-CHAMPA; Janjgir
+Jashpur | जशपुर |
+Kanker | कांकेर | Uttar Bastar Kanker
+Kabirdham (Kawardha) | कबीरधाम (कवर्धा) | KAWARDHA (KABIRDHAM); Kawardha; Kabirdham
+Korba | कोरबा |
+Koriya | कोरिया | Korea
+Mahasamund | महासमुंद | MAHASMUND
+Raigarh | रायगढ़ |
+Raipur | रायपुर |
+Rajnandgaon | राजनांदगाँव | RAJ NANDGAON
+Surguja | सरगुजा | SARGUJA
+@ Dadra and Nagar Haveli | दादरा और नगर हवेली | D & N HAVELI; Dadra & Nagar Haveli
+Dadra and Nagar Haveli | दादरा और नगर हवेली | DADRA & NAGAR HAVELI
+@ Delhi | दिल्ली | NCT of Delhi
+Delhi | दिल्ली |
+@ Goa | गोवा |
+North Goa | उत्तर गोवा | GOA NORTH
+South Goa | दक्षिण गोवा | GOA SOUTH
+Goa | गोवा |
+@ Gujarat | गुजरात |
+Ahmedabad | अहमदाबाद |
+Amreli | अमरेली |
+Anand | आणंद |
+Banaskantha | बनासकांठा | BANAS KANTHA
+Bhavnagar | भावनगर |
+Bharuch | भरूच | BROACH
+Valsad | वलसाड | BULSAR; VALSAD
+The Dangs | डांग | DANGS; Dang
+Dahod | दाहोद | DOHAD
+Gandhinagar | गांधीनगर |
+Jamnagar | जामनगर |
+Junagadh | जूनागढ़ | JUNAGARH
+Kheda | खेड़ा |
+Kachchh | कच्छ | KUTCH
+Mehsana | मेहसाणा |
+Narmada | नर्मदा |
+Navsari | नवसारी |
+Panchmahal | पंचमहल | PANCH MAHALS
+Patan | पाटन |
+Porbandar | पोरबंदर |
+Rajkot | राजकोट |
+Sabarkantha | साबरकांठा |
+Surat | सूरत |
+Surendranagar | सुरेंद्रनगर |
+Tapi | तापी |
+Vadodara | वडोदरा |
+@ Haryana | हरियाणा |
+Ambala | अंबाला |
+Anantpur | अनंतपुर | ANANTPUR
+Bhiwani | भिवानी |
+Faridabad | फ़रीदाबाद |
+Fatehabad | फ़तेहाबाद |
+Gurugram | गुरुग्राम | GURGAON
+Hisar | हिसार | HISSAR
+Jhajjar | झज्जर |
+Jind | जींद |
+Kaithal | कैथल |
+Karnal | करनाल |
+Kurukshetra | कुरुक्षेत्र | KURKSHETRA
+Mahendragarh | महेंद्रगढ़ | MAHENDRA GARH
+Nuh (Mewat) | नूंह (मेवात) | MEWAT; Nuh
+Palwal | पलवल |
+Panchkula | पंचकूला |
+Panipat | पानीपत |
+Rewari | रेवाड़ी |
+Rohtak | रोहतक |
+Sirsa | सिरसा |
+Sonipat | सोनीपत | SONEPAT
+Yamunanagar | यमुनानगर | YAMUNA NAGAR
+Charkhi Dadri | चरखी दादरी |
+@ Himachal Pradesh | हिमाचल प्रदेश |
+Bilaspur | बिलासपुर |
+Chamba | चंबा |
+Hamirpur | हमीरपुर |
+Kangra | कांगड़ा |
+Kinnaur | किन्नौर |
+Kullu | कुल्लू | KULU
+Lahaul and Spiti | लाहौल और स्पीति | LAHAUL & SPITI
+Mandi | मंडी |
+Shimla | शिमला | SIMLA
+Sirmaur | सिरमौर |
+Solan | सोलन |
+Una | ऊना |
+@ Jammu and Kashmir | जम्मू और कश्मीर | JAMMU & KASHMIR
+Anantnag | अनंतनाग | ANANTNAGH
+Baramulla | बारामूला |
+Budgam | बडगाम |
+Doda | डोडा |
+Jammu | जम्मू |
+Kargil | कारगिल |
+Kathua | कठुआ |
+Kupwara | कुपवाड़ा |
+Leh | लेह |
+Poonch | पुंछ |
+Pulwama | पुलवामा | PULWANNA
+Rajouri | राजौरी |
+Srinagar | श्रीनगर |
+Udhampur | उधमपुर |
+@ Jharkhand | झारखंड |
+Bokaro | बोकारो |
+Chatra | चतरा |
+Deoghar | देवघर |
+Dhanbad | धनबाद |
+Dumka | दुमका |
+East Singhbhum | पूर्वी सिंहभूम | Purbi Singhbhum
+Garhwa | गढ़वा |
+Giridih | गिरिडीह |
+Godda | गोड्डा |
+Gumla | गुमला |
+Hazaribagh | हज़ारीबाग | HAZAIBAG
+Jamtara | जामताड़ा |
+Koderma | कोडरमा |
+Latehar | लातेहार |
+Lohardaga | लोहरदगा |
+Pakur | पाकुड़ |
+Palamu | पलामू |
+Ranchi | रांची |
+Sahibganj | साहिबगंज |
+Seraikela Kharsawan | सरायकेला खरसावाँ | SERAIKELA; Saraikela Kharsawan
+Simdega | सिमडेगा |
+West Singhbhum | पश्चिमी सिंहभूम | Pashchimi Singhbhum
+@ Karnataka | कर्नाटक |
+Bagalkot | बागलकोट |
+Bengaluru Rural | बेंगलुरु ग्रामीण | BANGALORE (RURAL); Bangalore Rural
+Bengaluru Urban | बेंगलुरु शहरी | BANGALORE (URBAN); Bangalore Urban; Bangalore; Bengaluru
+Belagavi | बेलगावी | BELGAUM
+Ballari | बल्लारी | BELLARY
+Bidar | बीदर |
+Vijayapura | विजयपुरा | BIJAPUR
+Chamarajanagar | चामराजनगर | CHAMARAJANNAGAR
+Chikkaballapur | चिक्कबल्लापुर | CHICKBALLAPUR; Chikballapur
+Chikkamagaluru | चिक्कमगलूरु | CHIKMAGALUR
+Chitradurga | चित्रदुर्ग |
+Dakshina Kannada | दक्षिण कन्नड़ | DAKSHINAKANNADA
+Davanagere | दावणगेरे | DAVANGERE
+Dharwad | धारवाड़ |
+Gadag | गदग |
+Kalaburagi | कलबुर्गी | GULBARGA
+Hassan | हासन |
+Haveri | हावेरी |
+Kodagu | कोडगु | KODAGU(COORG); Coorg
+Kolar | कोलार |
+Koppal | कोप्पल |
+Mandya | मांड्या |
+Mysuru | मैसूरु | MYSORE
+Raichur | रायचूर |
+Bengaluru South (Ramanagara) | बेंगलुरु दक्षिण (रामनगर) | RAMANAGAR; Ramanagara; Bengaluru South
+Shivamogga | शिवमोग्गा | SHIMOGA
+Tumakuru | तुमकुरु | TUMKUR
+Udupi | उडुपी |
+Uttara Kannada | उत्तर कन्नड़ | UTTARAKANNADA; Karwar
+Vijayanagara | विजयनगर |
+Yadgir | यादगीर |
+@ Kerala | केरल |
+Alappuzha | अलप्पुझा | Alleppey
+Ernakulam | एर्नाकुलम |
+Idukki | इडुक्की |
+Kannur | कन्नूर |
+Kasaragod | कासरगोड | KASARGOD
+Kollam | कोल्लम | QUILON
+Kottayam | कोट्टयम |
+Kozhikode | कोझिकोड | Calicut
+Malappuram | मलप्पुरम |
+Palakkad | पालक्काड | Palghat
+Pathanamthitta | पत्तनमतिट्टा |
+Thrissur | त्रिशूर |
+Thiruvananthapuram | तिरुवनंतपुरम | TRIVANDRUM
+Wayanad | वायनाड | WYNAD
+@ Madhya Pradesh | मध्य प्रदेश |
+Agar Malwa | आगर मालवा |
+Alirajpur | अलीराजपुर |
+Anuppur | अनूपपुर |
+Ashoknagar | अशोकनगर | ASHOK NAGAR
+Balaghat | बालाघाट |
+Barwani | बड़वानी |
+Bastar | बस्तर |
+Betul | बैतूल |
+Bhind | भिंड |
+Bhopal | भोपाल |
+Bilaspur | बिलासपुर |
+Burhanpur | बुरहानपुर |
+Chhatarpur | छतरपुर |
+Chhindwara | छिंदवाड़ा | CHINDWARA
+Damoh | दमोह |
+Dantewada | दंतेवाड़ा | DANTEWADA
+Datia | दतिया |
+Dewas | देवास |
+Dhamtari | धमतरी | DHAMANTARI
+Dhar | धार |
+Dindori | डिंडोरी |
+Durg | दुर्ग |
+Guna | गुना |
+Gwalior | ग्वालियर |
+Harda | हरदा |
+Narmadapuram (Hoshangabad) | नर्मदापुरम (होशंगाबाद) | HOSHANGABAD; Narmadapuram
+Indore | इंदौर |
+Jabalpur | जबलपुर |
+Janjgir | जांजगीर | JANGIR
+Jhabua | झाबुआ |
+Jashpur | जशपुर | JUSHPUR
+Kanker | कांकेर | KANKAR
+Katni | कटनी |
+Khandwa (East Nimar) | खंडवा (पूर्वी निमाड़) | KHANDWA; East Nimar
+Khargone (West Nimar) | खरगोन (पश्चिमी निमाड़) | KHARGAON; Khargone; West Nimar
+Korba | कोरबा |
+Koriya | कोरिया |
+Kawardha | कवर्धा | KWARDHA
+Mahasamund | महासमुंद | MAHASUMUNDRA
+Maihar | मैहर |
+Mandla | मंडला |
+Mandsaur | मंदसौर |
+Mauganj | मऊगंज |
+Morena | मुरैना |
+Narsinghpur | नरसिंहपुर | NARSIMPUR
+Neemuch | नीमच | NEEMACH
+Niwari | निवाड़ी |
+Pandhurna | पांढुर्णा |
+Panna | पन्ना |
+Raigarh | रायगढ़ |
+Raipur | रायपुर |
+Raisen | रायसेन |
+Rajgarh | राजगढ़ |
+Rajnandgaon | राजनांदगाँव |
+Ratlam | रतलाम |
+Rewa | रीवा |
+Sagar | सागर |
+Surguja | सरगुजा | SARGUJA
+Satna | सतना |
+Sehore | सीहोर |
+Seoni | सिवनी |
+Shahdol | शहडोल |
+Shajapur | शाजापुर |
+Sheopur | श्योपुर | SHEOPUR KALA
+Shivpuri | शिवपुरी |
+Sidhi | सीधी |
+Singrauli | सिंगरौली |
+Tikamgarh | टीकमगढ़ |
+Ujjain | उज्जैन |
+Umaria | उमरिया |
+Vidisha | विदिशा |
+@ Maharashtra | महाराष्ट्र |
+Ahilyanagar (Ahmednagar) | अहिल्यानगर (अहमदनगर) | AHMEDNAGAR; Ahilyanagar
+Akola | अकोला |
+Amravati | अमरावती |
+Chhatrapati Sambhajinagar (Aurangabad) | छत्रपति संभाजीनगर (औरंगाबाद) | AURANGABAD; Chhatrapati Sambhajinagar; Sambhajinagar
+Beed | बीड | Bid
+Bhandara | भंडारा |
+Buldhana | बुलढाणा |
+Chandrapur | चंद्रपुर |
+Dhule | धुले |
+Gadchiroli | गढ़चिरोली |
+Gondia | गोंदिया |
+Hingoli | हिंगोली |
+Jalna | जालना | JALANA
+Jalgaon | जलगाँव |
+Kolhapur | कोल्हापुर |
+Latur | लातूर |
+Mumbai City | मुंबई शहर | Mumbai
+Mumbai Suburban | मुंबई उपनगर |
+Nandurbar | नंदुरबार | MANDURBAR
+Nagpur | नागपुर |
+Nanded | नांदेड़ |
+Nashik | नासिक | NASIK
+Dharashiv (Osmanabad) | धाराशिव (उस्मानाबाद) | OSMANABAD; Dharashiv
+Palghar | पालघर |
+Parbhani | परभणी |
+Pune | पुणे |
+Raigad | रायगड |
+Ratnagiri | रत्नागिरी |
+Sangli | सांगली |
+Satara | सातारा |
+Sindhudurg | सिंधुदुर्ग |
+Solapur | सोलापुर |
+Thane | ठाणे |
+Wardha | वर्धा |
+Washim | वाशिम |
+Yavatmal | यवतमाल |
+@ Manipur | मणिपुर |
+Bishnupur | बिष्णुपुर |
+Chandel | चंदेल |
+Churachandpur | चुराचांदपुर |
+Imphal East | इंफाल पूर्व |
+Imphal West | इंफाल पश्चिम |
+Manipur | मणिपुर |
+Senapati | सेनापति |
+Tamenglong | तामेंगलोंग |
+Thoubal | थौबल |
+Ukhrul | उखरुल |
+@ Meghalaya | मेघालय | MEGHALYA
+East Garo Hills | पूर्वी गारो हिल्स |
+East Khasi Hills | पूर्वी खासी हिल्स |
+Jaintia Hills | जयंतिया हिल्स | JAINTA HILLS
+Ri Bhoi | री-भोई |
+South Garo Hills | दक्षिणी गारो हिल्स |
+West Garo Hills | पश्चिमी गारो हिल्स |
+West Khasi Hills | पश्चिमी खासी हिल्स |
+@ Mizoram | मिज़ोरम |
+Aizawl | आइज़ोल | AIZWAL
+Chhimtuipui | छिमतुईपुई |
+East Aizawl | पूर्वी आइज़ोल |
+Kolasib | कोलासिब |
+Lawngtlai | लॉन्गतलाई |
+Lunglei | लुंगलेई |
+Mamit | मामित |
+Saiha | सइहा | Siaha
+Serchhip | सेरछिप |
+West Aizawl | पश्चिमी आइज़ोल |
+@ Nagaland | नागालैंड |
+Dimapur | दीमापुर |
+Kohima | कोहिमा |
+Mokokchung | मोकोकचुंग |
+Mon | मोन |
+Nagaland | नागालैंड |
+Phek | फेक |
+Tuensang | त्वेनसांग |
+Wokha | वोखा |
+Zunheboto | ज़ुन्हेबोटो |
+@ Odisha | ओडिशा | ORISSA; Orissa
+Anantpur | अनंतपुर | ANANTPUR
+Angul | अंगुल | Anugul
+Baleshwar (Balasore) | बालेश्वर (बालासोर) | BALASORE; Baleshwar
+Bhadrak | भद्रक |
+Balangir | बलांगीर | BOLANGIR
+Boudh | बौध | Baudh
+Bargarh | बरगढ़ | BURAGARH
+Cuttack | कटक |
+Deogarh | देवगढ़ | Debagarh
+Dhenkanal | ढेंकानाल |
+Gajapati | गजपति | GAJAPATTI
+Ganjam | गंजाम |
+Jagatsinghpur | जगतसिंहपुर | JAGATSINGPUR
+Jajpur | जाजपुर |
+Jharsuguda | झारसुगुड़ा | JHARSUGDA
+Kalahandi | कालाहांडी |
+Kandhamal | कंधमाल |
+Kendrapara | केंद्रपाड़ा | KEDRAPARA
+Keonjhar | क्योंझर | Kendujhar
+Khordha | खोर्धा | KHURDA; Khurda
+Koraput | कोरापुट |
+Malkangiri | मलकानगिरी |
+Mayurbhanj | मयूरभंज |
+Nuapada | नुआपाड़ा | NAWAPARA
+Nabarangpur | नबरंगपुर | NAWORANGPUR
+Nayagarh | नयागढ़ |
+Phulbani | फूलबनी |
+Puri | पुरी |
+Rayagada | रायगड़ा |
+Sambalpur | संबलपुर |
+Subarnapur (Sonepur) | सुबर्णपुर (सोनपुर) | SONEPUR; Subarnapur
+Sundargarh | सुंदरगढ़ |
+@ Puducherry | पुडुचेरी | PONDICHERRY; Pondicherry
+Karaikal | कराईकल |
+Mahe | माहे |
+Puducherry | पुडुचेरी | PONDYCHERRY (DIST); Pondicherry
+Yanam | यानम |
+@ Punjab | पंजाब |
+Amritsar | अमृतसर |
+Barnala | बरनाला |
+Bathinda | बठिंडा | BHATINDA
+Faridkot | फ़रीदकोट |
+Fatehgarh Sahib | फ़तेहगढ़ साहिब |
+Fazilka | फ़ाज़िल्का |
+Firozpur | फ़िरोज़पुर | FIROZPUR; Ferozepur; Ferozpur
+Gurdaspur | गुरदासपुर |
+Hoshiarpur | होशियारपुर |
+Jalandhar | जालंधर |
+Kapurthala | कपूरथला |
+Ludhiana | लुधियाना |
+Malerkotla | मलेरकोटला |
+Mansa | मानसा | MANSHA
+Moga | मोगा |
+Sri Muktsar Sahib | श्री मुक्तसर साहिब | MUKATSAR; Muktsar
+Shaheed Bhagat Singh Nagar (Nawanshahr) | शहीद भगत सिंह नगर (नवांशहर) | N.SHAHAR; Nawanshahr; SBS Nagar; Shahid Bhagat Singh Nagar
+Pathankot | पठानकोट |
+Patiala | पटियाला |
+Rupnagar (Ropar) | रूपनगर (रोपड़) | ROPAR(RUPNAGAR); Rupnagar; Ropar
+Sahibzada Ajit Singh Nagar (Mohali) | साहिबज़ादा अजीत सिंह नगर (मोहाली) | Mohali; SAS Nagar; S.A.S Nagar
+Sangrur | संगरूर |
+Tarn Taran | तरनतारन | Tarntaran
+@ Rajasthan | राजस्थान |
+Ajmer | अजमेर |
+Alwar | अलवर |
+Banswara | बांसवाड़ा |
+Baran | बारां | BAREN
+Barmer | बाड़मेर |
+Bharatpur | भरतपुर |
+Bhilwara | भीलवाड़ा |
+Bikaner | बीकानेर |
+Bundi | बूंदी |
+Chittorgarh | चित्तौड़गढ़ | CHITTOR GARH
+Churu | चूरू |
+Dausa | दौसा |
+Dholpur | धौलपुर |
+Dungarpur | डूंगरपुर |
+Sri Ganganagar | श्रीगंगानगर | GANGANAGAR
+Hanumangarh | हनुमानगढ़ |
+Jaipur | जयपुर |
+Jaisalmer | जैसलमेर |
+Jalore | जालोर |
+Jhalawar | झालावाड़ |
+Jhunjhunu | झुंझुनूं |
+Jodhpur | जोधपुर |
+Karauli | करौली |
+Kota | कोटा |
+Nagaur | नागौर |
+Pali | पाली |
+Rajsamand | राजसमंद |
+Sawai Madhopur | सवाई माधोपुर |
+Sikar | सीकर |
+Sirohi | सिरोही |
+Tonk | टोंक |
+Udaipur | उदयपुर |
+@ Sikkim | सिक्किम |
+East Sikkim | पूर्व सिक्किम | EAST
+North Sikkim | उत्तर सिक्किम | NORTH
+South Sikkim | दक्षिण सिक्किम | SOUTH
+West Sikkim | पश्चिम सिक्किम | WEST
+@ Tamil Nadu | तमिलनाडु |
+Ariyalur | अरियालूर |
+Coimbatore | कोयंबटूर |
+Cuddalore | कडलूर |
+Dharmapuri | धर्मपुरी |
+Dindigul | डिंडिगुल | DIDUGUL
+Erode | इरोड |
+Kancheepuram | कांचीपुरम | Kanchipuram
+Kanniyakumari | कन्याकुमारी | KANYA KUMARI; Kanyakumari
+Karur | करूर |
+Krishnagiri | कृष्णगिरि |
+Madurai | मदुरै |
+Nagapattinam | नागपट्टिनम |
+Namakkal | नामक्कल |
+Perambalur | पेरम्बलूर |
+Pudukkottai | पुदुक्कोट्टई |
+Ramanathapuram | रामनाथपुरम |
+Salem | सेलम |
+Sivaganga | शिवगंगा | SIVAGANGAI
+Thanjavur | तंजावुर |
+The Nilgiris | नीलगिरि | Nilgiris
+Theni | थेनी |
+Tiruppur | तिरुप्पुर | THIRUPPUR
+Tiruvallur | तिरुवल्लूर | THIRUVALLUR
+Tiruvarur | तिरुवारूर | THIRUVARUR
+Thoothukudi | तूतुकुड़ी | Tuticorin
+Tiruchirappalli | तिरुचिरापल्ली | TIRUCHIRAPALLI; Trichy
+Tirunelveli | तिरुनेलवेली |
+Tiruvannamalai | तिरुवन्नामलई | TIRUVANNMALAI
+Vellore | वेल्लोर |
+Viluppuram | विलुप्पुरम | VILLUPURAM
+Virudhunagar | विरुधुनगर | VIRUDUNAGAR
+@ Telangana | तेलंगाना |
+@ Tripura | त्रिपुरा |
+Dhalai | धलाई |
+North Tripura | उत्तर त्रिपुरा | North (Tripura)
+South Tripura | दक्षिण त्रिपुरा | South (Tripura)
+West Tripura | पश्चिम त्रिपुरा | West (Tripura)
+@ Uttar Pradesh | उत्तर प्रदेश |
+Agra | आगरा |
+Aligarh | अलीगढ़ |
+Prayagraj (Allahabad) | प्रयागराज (इलाहाबाद) | ALLAHABAD; Prayagraj
+Almora | अल्मोड़ा | ALMORAH
+Ambedkar Nagar | अंबेडकर नगर | AMBEDKAR NGR.
+Amethi | अमेठी | AMETHI (CHHATRAPTI SAHUJI MAHARAJ NGR)
+Amroha | अमरोहा | AMROHA (J.B.PHULE NGR.); Jyotiba Phule Nagar
+Anantpur | अनंतपुर | ANANTPUR
+Auraiya | औरैया |
+Ayodhya (Faizabad) | अयोध्या (फ़ैज़ाबाद) | FAIZABAD; Ayodhya
+Azamgarh | आज़मगढ़ |
+Budaun | बदायूँ | BADAUN
+Bageshwar | बागेश्वर |
+Baghpat | बागपत | BAGPAT
+Bahraich | बहराइच |
+Ballia | बलिया |
+Balrampur | बलरामपुर |
+Banda | बाँदा |
+Barabanki | बाराबंकी |
+Bareilly | बरेली |
+Basti | बस्ती |
+Bhadohi (Sant Ravidas Nagar) | भदोही (संत रविदास नगर) | S.RAVI DAS NGR.; Bhadohi; Sant Ravidas Nagar
+Bijnor | बिजनौर |
+Bulandshahr | बुलंदशहर | BULLANDSHAHR; Bulandshahar
+Chamoli | चमोली |
+Champawat | चंपावत | CHAMPAVAT
+Chandauli | चंदौली |
+Chitrakoot | चित्रकूट | CHITRAKUT
+Dehradun | देहरादून |
+Deoria | देवरिया |
+Etah | एटा |
+Etawah | इटावा |
+Farrukhabad | फ़र्रुख़ाबाद |
+Fatehpur | फ़तेहपुर |
+Firozabad | फ़िरोज़ाबाद |
+Gautam Buddha Nagar | गौतम बुद्ध नगर | G.BUDDHA NGR.; Noida
+Garhwal | गढ़वाल |
+Ghaziabad | ग़ाज़ियाबाद |
+Ghazipur | ग़ाज़ीपुर |
+Gonda | गोंडा |
+Gorakhpur | गोरखपुर |
+Hamirpur | हमीरपुर |
+Hapur | हापुड़ |
+Hardoi | हरदोई |
+Haridwar | हरिद्वार |
+Hathras | हाथरस | MAHAMAYA NAGAR
+Jalaun | जालौन |
+Jaunpur | जौनपुर |
+Jhansi | झाँसी |
+Kannauj | कन्नौज |
+Kanpur Nagar | कानपुर नगर | KANPUR CITY; Kanpur
+Kanpur Dehat | कानपुर देहात | RAMABAI NAGAR
+Kasganj | कासगंज | KASGANJ (KASHIRAM NAGAR)
+Kaushambi | कौशाम्बी |
+Lakhimpur Kheri | लखीमपुर खीरी | KHERI; Lakhimpur
+Kushinagar | कुशीनगर | KUSHI NGR.
+Lalitpur | ललितपुर |
+Lucknow | लखनऊ |
+Maharajganj | महराजगंज | MAHARAHGANJ
+Mahoba | महोबा |
+Mainpuri | मैनपुरी |
+Mathura | मथुरा |
+Mau | मऊ |
+Meerut | मेरठ |
+Mirzapur | मिर्ज़ापुर |
+Moradabad | मुरादाबाद |
+Muzaffarnagar | मुज़फ़्फ़रनगर |
+Nainital | नैनीताल |
+Pilibhit | पीलीभीत |
+Pithoragarh | पिथौरागढ़ |
+Pratapgarh | प्रतापगढ़ |
+Raebareli | रायबरेली | Rae Bareli
+Rampur | रामपुर |
+Rudraprayag | रुद्रप्रयाग | RUDRA PRAYAG
+Saharanpur | सहारनपुर |
+Sambhal | संभल |
+Sant Kabir Nagar | संत कबीर नगर | SANT KABIR NGR.
+Shahjahanpur | शाहजहाँपुर |
+Shamli | शामली |
+Shravasti | श्रावस्ती | SHIVASTI
+Siddharthnagar | सिद्धार्थनगर | SIDDHARTH NGR.
+Sitapur | सीतापुर |
+Sonbhadra | सोनभद्र |
+Sultanpur | सुल्तानपुर |
+Tehri Garhwal | टिहरी गढ़वाल | TEHRIGARHWAL
+Udham Singh Nagar | ऊधम सिंह नगर | U.S.NAGAR
+Unnao | उन्नाव |
+Uttarkashi | उत्तरकाशी | UTTAR KASHI
+Varanasi | वाराणसी |
+@ Uttarakhand | उत्तराखंड | UTTARANCHAL
+Almora | अल्मोड़ा |
+Bageshwar | बागेश्वर |
+Chamoli | चमोली |
+Champawat | चंपावत |
+Dehradun | देहरादून | DEHARDUN
+Haridwar | हरिद्वार |
+Nainital | नैनीताल |
+Pauri Garhwal | पौड़ी गढ़वाल |
+Pithoragarh | पिथौरागढ़ |
+Rudraprayag | रुद्रप्रयाग |
+Tehri Garhwal | टिहरी गढ़वाल | TEHRI GARWAL
+Udham Singh Nagar | ऊधम सिंह नगर |
+Uttarkashi | उत्तरकाशी |
+@ West Bengal | पश्चिम बंगाल |
+North 24 Parganas | उत्तर 24 परगना | 24 PARGANAS (NORTH)
+South 24 Parganas | दक्षिण 24 परगना | 24 PARGANAS (SOUTH)
+Bankura | बांकुड़ा |
+Birbhum | बीरभूम |
+Bardhaman (Burdwan) | बर्धमान (बर्दवान) | BURDWAN; Bardhaman
+Cooch Behar | कूचबिहार | COOCH-BEHAR; Koch Bihar
+Darjeeling | दार्जिलिंग |
+Dakshin Dinajpur | दक्षिण दिनाजपुर | DINAJPUR(SOUTH); South Dinajpur
+Uttar Dinajpur | उत्तर दिनाजपुर | DINAJUR(NORTH); North Dinajpur
+Hooghly | हुगली | Hugli
+Howrah | हावड़ा |
+Jalpaiguri | जलपाईगुड़ी |
+Malda | मालदा | Maldah
+Purba Medinipur | पूर्व मेदिनीपुर | MIDNAPUR ( EAST); East Midnapore; Purba Medinipur
+Paschim Medinipur | पश्चिम मेदिनीपुर | MIDNAPUR (WEST); West Midnapore
+Murshidabad | मुर्शिदाबाद |
+Nadia | नदिया |
+Purulia | पुरुलिया |
+West Dinajpur | पश्चिम दिनाजपुर |
+@ Ladakh | लद्दाख |
+Leh | लेह |
+Kargil | कारगिल |
+@ Lakshadweep | लक्षद्वीप |
+@ Daman and Diu | दमन और दीव |
+@ Dadra and Nagar Haveli and Daman and Diu | दादरा और नगर हवेली और दमन और दीव |
+Dadra and Nagar Haveli | दादरा और नगर हवेली |
+Daman | दमन |
+Diu | दीव |

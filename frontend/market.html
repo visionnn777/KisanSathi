@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8f3">
+  <meta name="description" content="Farmers post produce, buyers send their number. No middleman.">
+  <title>बेचें-खरीदें | KisanSaathi</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232b6844'/%3E%3Cpath d='M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5' fill='none' stroke='%23f2cb69' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Mukta-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/TiroDevanagariHindi-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <script src="js/names.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/market.js" defer></script>
+</head>
+<body data-title-key="nav_market">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="wordmark" href="index.html" aria-label="KisanSaathi home">
+        <svg class="wordmark-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2b6844"/><path d="M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5" fill="none" stroke="#f2cb69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="wordmark-text"><span class="wordmark-en" lang="en">KisanSaathi</span><span class="wordmark-hi" lang="hi">किसान साथी</span></span>
+      </a>
+      <nav class="top-nav" data-i18n-aria="nav_label">
+        <a href="disease.html"><span data-i18n="nav_doctor">Crop Doctor</span></a>
+        <a href="prices.html"><span data-i18n="nav_prices">Mandi prices</span></a>
+        <a href="crops.html"><span data-i18n="nav_insights">Crop insights</span></a>
+        <a href="planning.html"><span data-i18n="nav_planner">Next season</span></a>
+        <a href="irrigation.html"><span data-i18n="nav_irrigation">Irrigation</span></a>
+        <a href="market.html" aria-current="page"><span data-i18n="nav_market">Sell &amp; buy</span></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / भाषा">
+        <button type="button" data-lang="hi" aria-pressed="true" lang="hi">हिं</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <header class="page-head">
+      <h1 data-i18n="mk_title">Sell &amp; buy</h1>
+      <p data-i18n="mk_intro">Farmers post their crop. Buyers send their number. No middleman.</p>
+    </header>
+
+    <div class="seg" role="tablist" data-i18n-aria="mk_tabs_label">
+      <button type="button" role="tab" id="tab-sell" aria-controls="panel-sell" aria-selected="true"><span data-i18n="mk_tab_sell">Sell my crop</span></button>
+      <button type="button" role="tab" id="tab-buy" aria-controls="panel-buy" aria-selected="false" tabindex="-1"><span data-i18n="mk_tab_buy">Buy</span></button>
+      <button type="button" role="tab" id="tab-mine" aria-controls="panel-mine" aria-selected="false" tabindex="-1"><span data-i18n="mk_tab_mine">My listings</span></button>
+    </div>
+
+    <section id="panel-sell" class="tabpanel" role="tabpanel" aria-labelledby="tab-sell">
+      <form id="sellForm" class="split" novalidate>
+        <div class="panel form">
+          <h2 class="panel-title" data-i18n="mk_sell_title">What are you selling?</h2>
+          <fieldset class="field chips-field">
+            <legend class="label" data-i18n="f_crop">Crop</legend>
+            <div class="chips" id="cropChips"></div>
+          </fieldset>
+          <div class="field" id="otherCropField" hidden>
+            <label class="label" for="s_crop_other" data-i18n="f_crop_other">Crop name</label>
+            <input class="input" id="s_crop_other" maxlength="60">
+          </div>
+          <div class="row two">
+            <div class="field">
+              <label class="label" for="s_qty" data-i18n="f_qty">Quantity</label>
+              <div class="input-unit"><input class="input num" id="s_qty" name="quantity_kg" type="number" inputmode="decimal" min="1" step="any" required><span class="unit" data-i18n="unit_kg">kg</span></div>
+            </div>
+            <div class="field">
+              <label class="label" for="s_price" data-i18n="f_price">Price per kg</label>
+              <div class="input-unit"><input class="input num" id="s_price" name="price_per_kg" type="number" inputmode="decimal" min="0.5" step="any" required><span class="unit" data-i18n="unit_rs_kg">₹/kg</span></div>
+            </div>
+          </div>
+          <div class="total-line" id="totalLine" hidden><span data-i18n="mk_total">Total value</span><strong class="num" id="totalValue"></strong></div>
+        </div>
+
+        <div class="panel form">
+          <h2 class="panel-title" data-i18n="mk_you">About you</h2>
+          <div class="field">
+            <label class="label" for="s_name" data-i18n="f_name">Your name</label>
+            <input class="input" id="s_name" name="farmer_name" required minlength="2" maxlength="80" autocomplete="name">
+          </div>
+          <div class="field">
+            <label class="label" for="s_phone" data-i18n="f_phone">Mobile number</label>
+            <input class="input num" id="s_phone" name="phone" type="tel" inputmode="tel" required maxlength="16" placeholder="98765 43210" autocomplete="tel" aria-describedby="phoneHint">
+            <p class="hint" id="phoneHint" data-i18n="f_phone_hint">Buyers do not see your number.</p>
+            <div class="otp-slot" id="sellOtpSlot" hidden></div>
+          </div>
+          <div class="field">
+            <label class="label" for="s_owner_pin" data-i18n="mk_pin">Private farmer PIN</label>
+            <div class="input-unit pin-wrap">
+              <input class="input" id="s_owner_pin" name="owner_pin" type="password" minlength="8" maxlength="128" required autocomplete="new-password" aria-describedby="pinHint">
+              <button class="pin-toggle" type="button" data-pin-toggle="s_owner_pin" aria-controls="s_owner_pin"><span data-i18n="mk_pin_show">Show</span></button>
+            </div>
+            <p class="hint" id="pinHint"><span data-icon="lock" class="sm"></span><span data-i18n="mk_pin_hint">At least 8 characters. Keep it secret: you need it to see buyer numbers and mark a crop sold.</span></p>
+          </div>
+          <div class="row two">
+            <div class="field">
+              <label class="label" for="s_village"><span data-i18n="f_village">Village</span> <span class="optional" data-i18n="optional">(optional)</span></label>
+              <input class="input" id="s_village" name="village" maxlength="80">
+            </div>
+            <div class="field">
+              <label class="label" for="s_district"><span data-i18n="f_district">District</span> <span class="optional" data-i18n="optional">(optional)</span></label>
+              <input class="input" id="s_district" name="district" maxlength="80">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="s_state"><span data-i18n="f_state">State</span> <span class="optional" data-i18n="optional">(optional)</span></label>
+            <select class="select" id="s_state" name="state"><option value="" data-i18n="crop_choose_state">Choose a state…</option></select>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top:20px"><span data-i18n="mk_post">Post for sale</span></button>
+          <div id="sellStatus" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+
+    <section id="panel-buy" class="tabpanel" role="tabpanel" aria-labelledby="tab-buy" hidden>
+      <form id="searchForm" class="panel search">
+        <div>
+          <label class="label" for="b_crop" data-i18n="mk_filter_crop">Crop</label>
+          <input class="input" id="b_crop" maxlength="60">
+        </div>
+        <div>
+          <label class="label" for="b_district" data-i18n="mk_filter_district">District</label>
+          <input class="input" id="b_district" maxlength="80">
+        </div>
+        <button class="btn btn-primary" type="submit"><span data-icon="search"></span><span data-i18n="mk_search">Search</span></button>
+      </form>
+      <div id="buyList" aria-live="polite"></div>
+    </section>
+
+    <section id="panel-mine" class="tabpanel" role="tabpanel" aria-labelledby="tab-mine" hidden>
+      <form id="mineForm" class="panel" novalidate>
+        <p class="panel-sub" style="margin-bottom:12px" data-i18n="mk_mine_help">Enter the mobile number and PIN you used when posting.</p>
+        <div class="search">
+          <div>
+            <label class="label" for="m_phone" data-i18n="f_phone">Mobile number</label>
+            <input class="input num" id="m_phone" type="tel" inputmode="tel" maxlength="16" placeholder="98765 43210" autocomplete="tel" required>
+          </div>
+          <div>
+            <label class="label" for="m_pin" data-i18n="mk_pin">Private farmer PIN</label>
+            <div class="input-unit pin-wrap">
+              <input class="input" id="m_pin" type="password" minlength="8" maxlength="128" autocomplete="current-password" required>
+              <button class="pin-toggle" type="button" data-pin-toggle="m_pin" aria-controls="m_pin"><span data-i18n="mk_pin_show">Show</span></button>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit"><span data-icon="lock"></span><span data-i18n="mk_show">Show my listings</span></button>
+        </div>
+        <div class="otp-slot" id="mineOtpSlot" hidden></div>
+      </form>
+      <div id="mineList" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><span data-i18n="footer_note">Mandi prices come from the community Mandi Price API, based on India’s open mandi data; check each report date. Advice is general; ask your Krishi Vigyan Kendra before using any chemical.</span> <a href="tel:18001801551" data-i18n="helpline">Kisan Call Centre: 1800-180-1551 (toll-free)</a></p>
+  </footer>
+  <nav class="bottom-nav" data-i18n-aria="nav_label">
+    <a href="disease.html"><span data-icon="leaf"></span><span data-i18n="nav_doctor">Crop Doctor</span></a>
+    <a href="prices.html"><span data-icon="rupee"></span><span data-i18n="nav_prices">Mandi prices</span></a>
+    <a href="crops.html"><span data-icon="chart"></span><span data-i18n="nav_insights">Crop insights</span></a>
+    <a href="planning.html"><span data-icon="sprout"></span><span data-i18n="nav_planner">Next season</span></a>
+    <a href="irrigation.html"><span data-icon="drop"></span><span data-i18n="nav_irrigation">Irrigation</span></a>
+    <a href="market.html" aria-current="page"><span data-icon="market"></span><span data-i18n="nav_market">Sell &amp; buy</span></a>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f8f3">
+  <meta name="description" content="Crop disease checks, mandi prices, crop history, irrigation planning and direct selling for farmers in Hindi and English.">
+  <title>किसान साथी | KisanSaathi</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232b6844'/%3E%3Cpath d='M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5' fill='none' stroke='%23f2cb69' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Mukta-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/TiroDevanagariHindi-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <script src="js/names.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body data-title-key="nav_home">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="inner">
+      <a class="wordmark" href="index.html" aria-label="KisanSaathi home">
+        <svg class="wordmark-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2b6844"/><path d="M9 23c0-7.5 4.8-12.4 14-13.4-.9 9-5.8 13.4-14 13.4zM9 23l6.5-6.5" fill="none" stroke="#f2cb69" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="wordmark-text"><span class="wordmark-en" lang="en">KisanSaathi</span><span class="wordmark-hi" lang="hi">किसान साथी</span></span>
+      </a>
+      <nav class="top-nav" data-i18n-aria="nav_label">
+        <a href="disease.html"><span data-i18n="nav_doctor">Crop Doctor</span></a>
+        <a href="prices.html"><span data-i18n="nav_prices">Mandi prices</span></a>
+        <a href="crops.html"><span data-i18n="nav_insights">Crop insights</span></a>
+        <a href="planning.html"><span data-i18n="nav_planner">Next season</span></a>
+        <a href="irrigation.html"><span data-i18n="nav_irrigation">Irrigation</span></a>
+        <a href="market.html"><span data-i18n="nav_market">Sell &amp; buy</span></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / भाषा">
+        <button type="button" data-lang="hi" aria-pressed="true" lang="hi">हिं</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="page home-page">
+    <section class="hero no-live" id="hero" aria-labelledby="homeTitle">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="home_eyebrow">PRACTICAL TOOLS FOR EVERY GROWING SEASON</span></p>
+        <h1 class="hero-title" id="homeTitle" data-i18n="home_title">Better decisions, from field to mandi.</h1>
+        <p class="hero-lead" data-i18n="home_lead">Check crop symptoms, see market context, plan water and compare next-season options—all in one place.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="disease.html"><span data-icon="camera"></span><span data-i18n="home_cta">Check a leaf</span></a>
+          <a class="btn btn-ghost btn-lg" href="prices.html"><span data-i18n="home_cta_prices">See mandi prices</span></a>
+        </div>
+        <p class="hero-assurance"><span data-icon="check" class="sm"></span><span data-i18n="home_assurance">Clear advice, dated prices and estimates with their limits explained.</span></p>
+      </div>
+      <div class="hero-art">
+        <img class="hero-landscape" src="assets/field-morning.svg" alt="Illustration of a farmer checking crops among green fields at sunrise" data-i18n-alt="home_art_alt" width="1000" height="820" fetchpriority="high">
+        <div class="hero-art-caption"><span class="caption-mark"><span data-icon="sprout"></span></span><span><strong data-i18n="home_art_title">Rooted in the realities of farming</strong><small data-i18n="home_art_sub">Useful tools, one step at a time</small></span></div>
+        <aside class="live" id="live" hidden aria-labelledby="liveTitle"></aside>
+      </div>
+    </section>
+
+    <section class="journey-section" aria-labelledby="journeyTitle">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="home_section_eyebrow">YOUR FARM, THREE PRACTICAL WORKFLOWS</span></p>
+        <div class="section-heading-row">
+          <div><h2 id="journeyTitle" data-i18n="home_section_title">What do you need today?</h2><p data-i18n="home_section_intro">Start with the job at hand. The right tool is only a tap away.</p></div>
+        </div>
+      </div>
+      <div class="journey-grid">
+        <article class="journey journey-care">
+          <div class="journey-top"><span class="journey-index">01 <span data-i18n="home_step_label">/ FIELD CARE</span></span>
+            <svg class="journey-art art-leaf" viewBox="0 0 190 120" aria-hidden="true"><path d="M13 108C19 77 46 53 90 40" fill="none" stroke="#8ebd85" stroke-width="3"/><path d="M25 96C19 64 37 42 70 43 70 72 54 91 25 96Z" fill="#8abf82"/><path d="M62 69C70 31 102 14 139 22 134 55 106 76 62 69Z" fill="#34764b"/><path d="M62 69L121 31" fill="none" stroke="#dcebd2" stroke-width="2.6"/><path d="M90 82C98 54 123 44 154 50 145 76 121 89 90 82Z" fill="#bfd8a7"/><path d="M90 82L139 57" fill="none" stroke="#6b9f61" stroke-width="2"/><circle cx="157" cy="20" r="9" fill="#f2cb69"/></svg>
+          </div>
+          <h3 data-i18n="home_group_care_title">Keep the crop healthy</h3>
+          <p data-i18n="home_group_care_desc">Spot possible leaf problems early, then make a more informed watering plan.</p>
+          <div class="journey-links">
+            <a href="disease.html"><span class="link-icon"><span data-icon="leaf"></span></span><span class="link-copy"><strong data-i18n="nav_doctor">Crop Doctor</strong><small data-i18n="home_link_doctor">Check a leaf and read practical care steps</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+            <a href="irrigation.html"><span class="link-icon"><span data-icon="drop"></span></span><span class="link-copy"><strong data-i18n="nav_irrigation">Irrigation planner</strong><small data-i18n="home_link_irrigation">Use the local forecast to estimate crop water needs</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="journey journey-plan">
+          <div class="journey-top"><span class="journey-index">02 <span data-i18n="home_step_plan">/ PLAN AHEAD</span></span>
+            <svg class="journey-art art-chart" viewBox="0 0 190 120" aria-hidden="true"><path d="M17 96H176" stroke="#b6c8aa" stroke-width="2" stroke-linecap="round"/><path d="M26 88V65H52V88 M66 88V45H92V88 M106 88V57H132V88 M146 88V28H170V88" fill="#a7c49a"/><path d="M28 52L71 32 105 43 151 18" fill="none" stroke="#2b6844" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="151" cy="18" r="6" fill="#f2cb69" stroke="#2b6844" stroke-width="2"/><path d="M21 106h151" stroke="#d7e0d1" stroke-width="2"/></svg>
+          </div>
+          <h3 data-i18n="home_group_plan_title">Choose with evidence</h3>
+          <p data-i18n="home_group_plan_desc">Bring production history, market reports and farm-cost estimates into the same decision.</p>
+          <div class="journey-links">
+            <a href="planning.html"><span class="link-icon"><span data-icon="sprout"></span></span><span class="link-copy"><strong data-i18n="nav_planner">Next season</strong><small data-i18n="home_link_planner">Compare options without guessing at returns</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+            <a href="crops.html"><span class="link-icon"><span data-icon="chart"></span></span><span class="link-copy"><strong data-i18n="nav_insights">Crop insights</strong><small data-i18n="home_link_insights">Explore recorded area, production and yield</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+            <a href="prices.html"><span class="link-icon"><span data-icon="rupee"></span></span><span class="link-copy"><strong data-i18n="nav_prices">Mandi prices</strong><small data-i18n="home_link_prices">Compare reported prices by market and date</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="journey journey-sell">
+          <div class="journey-top"><span class="journey-index">03 <span data-i18n="home_step_market">/ MARKET ACCESS</span></span>
+            <svg class="journey-art art-market" viewBox="0 0 190 120" aria-hidden="true"><path d="M30 45H158L147 103H42Z" fill="#d1e0c4" stroke="#477e4e" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 45L39 20H150L164 45Z" fill="#f2cb69" stroke="#477e4e" stroke-width="2.4" stroke-linejoin="round"/><path d="M43 45V102 M72 45V102 M101 45V102 M130 45V102" stroke="#94b88a" stroke-width="2"/><path d="M57 28C54 11 72 5 84 14 93 23 81 34 69 34Z" fill="#4a8a50"/><path d="M85 29C85 12 104 6 114 18 114 31 99 36 85 29Z" fill="#2b6844"/><circle cx="136" cy="20" r="8" fill="#d98f47"/><path d="M30 45H158" stroke="#2b6844" stroke-width="4"/></svg>
+          </div>
+          <h3 data-i18n="home_group_sell_title">Sell with more confidence</h3>
+          <p data-i18n="home_group_sell_desc">Publish a simple produce listing and let interested buyers contact you directly.</p>
+          <div class="journey-links">
+            <a href="market.html"><span class="link-icon"><span data-icon="market"></span></span><span class="link-copy"><strong data-i18n="nav_market">Sell &amp; buy</strong><small data-i18n="home_link_market">List your produce and manage buyer interest</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="sell-note"><span data-icon="info" class="sm"></span><span data-i18n="home_sell_note">Always agree on quality, quantity, payment and transport before delivery.</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="help-band" aria-labelledby="helpTitle">
+      <div class="help-symbol"><span data-icon="phone" class="lg"></span></div>
+      <div class="help-copy"><h2 id="helpTitle" data-i18n="help_title">Want to talk to an expert?</h2><p data-i18n="help_body">The Kisan Call Centre gives free farming advice in your language.</p></div>
+      <a class="btn btn-ghost" href="tel:18001801551"><span data-icon="phone"></span><span data-i18n="help_call">Call 1800-180-1551</span></a>
+    </section>
+  </main>
+  <footer class="site-footer home-footer">
+    <p><span data-i18n="footer_note">Mandi prices come from the community Mandi Price API, based on India’s open mandi data; check each report date. Advice is general; ask your Krishi Vigyan Kendra before using any chemical.</span> <a href="tel:18001801551" data-i18n="helpline">Kisan Call Centre: 1800-180-1551 (toll-free)</a></p>
+  </footer>
+  <nav class="bottom-nav" data-i18n-aria="nav_label">
+    <a href="disease.html"><span data-icon="leaf"></span><span data-i18n="nav_doctor">Crop Doctor</span></a>
+    <a href="prices.html"><span data-icon="rupee"></span><span data-i18n="nav_prices">Mandi prices</span></a>
+    <a href="crops.html"><span data-icon="chart"></span><span data-i18n="nav_insights">Crop insights</span></a>
+    <a href="planning.html"><span data-icon="sprout"></span><span data-i18n="nav_planner">Next season</span></a>
+    <a href="irrigation.html"><span data-icon="drop"></span><span data-i18n="nav_irrigation">Irrigation</span></a>
+    <a href="market.html"><span data-icon="market"></span><span data-i18n="nav_market">Sell &amp; buy</span></a>
+  </nav>
+</body>
+</html>

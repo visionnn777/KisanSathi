@@ -1,0 +1,20 @@
+# Install torch FIRST (CPU version, smaller download), then this file:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+# Tested with Python 3.12. Needs Python 3.11, 3.12 or 3.13.
+
+fastapi==0.143.3
+uvicorn[standard]==0.53.0
+python-multipart==0.0.32
+sqlalchemy==2.1.5
+psycopg[binary]==3.3.6
+pydantic==2.13.5
+python-dotenv==1.2.3
+requests==2.34.2
+pillow==12.3.0
+transformers==4.57.6
+huggingface-hub==0.36.2
+
+# For the automatic tests (python -m pytest)
+pytest==9.1.1
+httpx==0.28.1

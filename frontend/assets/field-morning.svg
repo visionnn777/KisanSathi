@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" role="img" aria-labelledby="title desc">
+<title id="title">A farmer among green fields at first light</title>
+<desc id="desc">A calm, editorial illustration of a farmer inspecting crops with layered fields, a village tree and sunrise in the distance.</desc>
+<defs>
+  <clipPath id="frame"><rect x="0" y="0" width="1000" height="820" rx="36"/></clipPath>
+  <linearGradient id="sky" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#edf2d9"/><stop offset="1" stop-color="#d4e6c8"/></linearGradient>
+  <linearGradient id="near" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a9d59"/><stop offset="1" stop-color="#2f7047"/></linearGradient>
+</defs>
+<g clip-path="url(#frame)">
+  <rect width="1000" height="820" fill="url(#sky)"/>
+  <circle cx="748" cy="155" r="76" fill="#f2cb69"/>
+  <path d="M0 350 Q180 242 340 322 T700 308 T1000 280 V500 H0Z" fill="#afc99a"/>
+  <path d="M0 425 Q180 340 350 405 T680 392 T1000 350 V590 H0Z" fill="#7fa76d"/>
+  <path d="M0 490 Q210 390 440 485 T820 445 T1000 432 V820 H0Z" fill="#5d9257"/>
+  <g fill="none" stroke-linecap="round" opacity=".65">
+    <path d="M-40 595 Q220 485 470 610 T1040 570" stroke="#c1d5a7" stroke-width="7"/>
+    <path d="M-60 650 Q210 540 465 680 T1040 640" stroke="#b1cb92" stroke-width="7"/>
+    <path d="M-80 712 Q190 595 460 748 T1040 705" stroke="#9fc184" stroke-width="7"/>
+    <path d="M-70 775 Q200 660 455 812 T1040 770" stroke="#8cb675" stroke-width="7"/>
+  </g>
+  <g transform="translate(150 330)">
+    <path d="M-14 50 C-75 6-80-42-41-72 C-10-91 18-69 22-36 C32-81 80-93 103-58 C125-22 84 20 28 54Z" fill="#3e7049"/>
+    <path d="M5 47 Q0 3 36-40" fill="none" stroke="#315f3d" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(545 390)">
+    <!-- farmer silhouette with a muted cotton scarf and work clothes -->
+    <path d="M-29 73 Q-45 120-48 183 L-36 247 H-7 L6 164 L21 247 H52 L57 178 Q56 115 31 73Z" fill="#274f3a"/>
+    <path d="M-39 245 L-42 317 H-8 L8 247Z" fill="#624f3e"/>
+    <path d="M20 246 L28 317 H61 L50 242Z" fill="#624f3e"/>
+    <path d="M-43 315 Q-59 320-56 335 H-3 L-5 317Z M28 316 L30 335 H82 Q85 321 62 316Z" fill="#293c30"/>
+    <path d="M-31 78 Q-59 106-80 145 L-64 161 L-29 121Z M28 78 Q49 94 67 127 L88 116 L61 77Z" fill="#315f43"/>
+    <path d="M-77 147 L-99 165 L-86 180 L-62 160Z" fill="#b98557"/>
+    <path d="M67 124 L93 109 L103 124 L84 141Z" fill="#b98557"/>
+    <path d="M-38 25 Q-42-12-11-22 Q20-29 34 1 L29 48 Q6 71-22 51Z" fill="#b98557"/>
+    <path d="M-45 3 Q-40-40-6-43 Q28-42 39-6 L31 5 Q9-4-9-18 Q-17 1-45 3Z" fill="#efe6cd"/>
+    <path d="M-39 8 Q-9 20 34 4" fill="none" stroke="#d3c29e" stroke-width="8"/>
+    <path d="M-33 69 Q-3 89 29 67" fill="none" stroke="#477657" stroke-width="8"/>
+  </g>
+  <!-- mature crop heads in the foreground -->
+  <g stroke="#d2b75d" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M835 820 Q830 730 850 645 M900 820 Q891 714 916 620 M956 820 Q940 737 964 676"/>
+    <path d="M850 675 l-23-20 M850 695 l25-21 M916 651 l-20-22 M916 675 l23-22 M964 708 l-20-19 M964 731 l22-18"/>
+  </g>
+  <g fill="#e4cb79">
+    <ellipse cx="825" cy="650" rx="8" ry="15" transform="rotate(-42 825 650)"/><ellipse cx="875" cy="673" rx="8" ry="15" transform="rotate(42 875 673)"/>
+    <ellipse cx="895" cy="627" rx="8" ry="15" transform="rotate(-42 895 627)"/><ellipse cx="939" cy="652" rx="8" ry="15" transform="rotate(42 939 652)"/>
+    <ellipse cx="943" cy="690" rx="8" ry="15" transform="rotate(-42 943 690)"/><ellipse cx="986" cy="708" rx="8" ry="15" transform="rotate(42 986 708)"/>
+  </g>
+  <path d="M0 800 Q245 740 450 802 T1000 790 V820 H0Z" fill="#2b6844"/>
+</g>
+</svg>
